@@ -25,6 +25,9 @@
 - https://linkedin.com/in/omariosouto
 - https://github.com/omariosouto
 
+## Jogo com JS
+- https://www.youtube.com/watch?v=jOAU81jdi-c
+
 ============
 
 # Exercício 01
