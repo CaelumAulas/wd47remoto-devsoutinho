@@ -9,6 +9,13 @@
 - https://hipsters.tech/guia-do-iniciante-em-github-hipsters-184/
 - https://hipsters.tech/pull-requests-e-code-review-hipsters-64/
 
+## Feature Flags
+- https://launchdarkly.com/
+
+
+## Clean Code
+- Tem o livro, mas tem os vídeos: https://www.youtube.com/watch?v=9w3o9NHXqu0&list=PLMdYygf53DP5Sc6yFYs6ZmjsuuA2fu0TK
+
 ============
 
 # Exercício 01

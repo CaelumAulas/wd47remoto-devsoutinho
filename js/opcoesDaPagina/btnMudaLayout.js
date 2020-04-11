@@ -39,3 +39,7 @@ btnMudaLayout.addEventListener('click', mudaLayout)
 
 
 // adicionaEscutadorDeEventosDoUsuarioOuNaoNecessariamente
+
+// Progressive Enhancement // Carregamento Progressivo
+// Feature Flag 
+btnMudaLayout.classList.remove('no-js');
