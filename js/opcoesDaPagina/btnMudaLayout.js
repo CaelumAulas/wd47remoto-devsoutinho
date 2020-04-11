@@ -1,5 +1,3 @@
-
-
 // Pegar/Achar o elemento no html
 const btnMudaLayout = document.querySelector('#btnMudaLayout');
 
