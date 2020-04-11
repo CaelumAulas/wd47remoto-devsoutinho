@@ -16,6 +16,15 @@
 ## Clean Code
 - Tem o livro, mas tem os vídeos: https://www.youtube.com/watch?v=9w3o9NHXqu0&list=PLMdYygf53DP5Sc6yFYs6ZmjsuuA2fu0TK
 
+## Dicas pra vida
+- Vagas: https://github.com/frontendbr/vagas/issues 
+- Testes: https://github.com/felipefialho/frontend-challenges
+
+## Contato 
+- https://twitter.com/omariosouto
+- https://linkedin.com/in/omariosouto
+- https://github.com/omariosouto
+
 ============
 
 # Exercício 01
