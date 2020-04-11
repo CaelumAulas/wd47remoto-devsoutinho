@@ -56,3 +56,26 @@
 	background: currentcolor;
 	border: 5px solid rgba(0,0,0,.5);
 }
+
+/* Escondendo opcoes */
+.opcoesDoCartao {
+	/* display: none; */
+	opacity: 0;
+	pointer-events: none;
+	/* Explorem: https://developer.mozilla.org/en-US/docs/Web/CSS/transform */
+	transform: translate(-1em, -50%) scale(0) rotate(90deg);
+	transition: opacity 500ms, transform 500ms;
+}
+.cartao:hover .opcoesDoCartao,
+.cartao:focus .opcoesDoCartao {
+	opacity: 1;
+	pointer-events: all;
+	transform: translate(-1em, -50%) scale(1) rotate(0deg);
+	/* display: inline-block; */
+}
+
+/* 
+
+Dúvidas
+
+*/
