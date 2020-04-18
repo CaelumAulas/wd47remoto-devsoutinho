@@ -67,12 +67,14 @@
 	transition: opacity 500ms, transform 500ms;
 }
 .cartao:hover .opcoesDoCartao,
-.cartao:focus .opcoesDoCartao {
+.cartao:focus .opcoesDoCartao,
+.cartao--focado .opcoesDoCartao {
 	opacity: 1;
 	pointer-events: all;
 	transform: translate(-1em, -50%) scale(1) rotate(0deg);
 	/* display: inline-block; */
 }
+/* E coloca os tabindex="0" */
 
 /* 
 

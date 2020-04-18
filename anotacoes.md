@@ -28,6 +28,9 @@
 ## Jogo com JS
 - https://www.youtube.com/watch?v=jOAU81jdi-c
 
+## Como saber os events importantes do JS?
+- https://developer.mozilla.org/en-US/docs/Web/Events
+
 ============
 
 # Exercício 01
