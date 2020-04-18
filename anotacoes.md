@@ -34,6 +34,13 @@
 ## VsCode dicas
 - https://www.alura.com.br/artigos/visualstudio-code-instalacao-teclas-de-atalho-plugins-e-integracoes
 
+## Dicas de animação
+- https://airbnb.design/lottie/ (Precisa de alguuém que manje de After Effects)
+- https://greensock.com/ (é paga mas o de Timeline não)
+
+## Trabalhando com Eventos
+- Konami Code: https://www.youtube.com/watch?v=6KS4t97yMlI
+
 ============
 
 # Exercício 01

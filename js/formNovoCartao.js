@@ -12,9 +12,26 @@
     const hasConteudo = Boolean(conteudo);
 
     if(hasConteudo) {
-      // cria o cartão
+      // [Declarativa] Template String - ES6
+      const $mural = document.querySelector('.mural');
+      const htmlDoCartao = criaHTMLDoCartao(conteudo)
+      $mural.insertAdjacentHTML('afterbegin', htmlDoCartao);
+
+      $formNovoCartaoConteudo.value = '';
     } else {
-      alert('Por favor, preencha alguma coisa');
+      // [Imperativa]
+      // <div class="formNovoCartao-msg">Digite algo por favor</div>
+      const $msgErro = document.createElement('div');
+      $msgErro.classList.add('formNovoCartao-msg');
+      $msgErro.textContent = 'Por favor, preencha alguma coisa';
+
+      $formNovoCartao.insertAdjacentElement('beforeend', $msgErro);
+
+
+      $msgErro.addEventListener('animationend', function () {
+        $msgErro.remove();
+      });
+      // alert('Por favor, preencha alguma coisa');
     }
   });
 
