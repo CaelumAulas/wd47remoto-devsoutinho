@@ -53,5 +53,20 @@
         cartao.style.background = alvoDoEvento.value
       }
     })
+
+
+    cartao.addEventListener('keydown', function(infosDoEvento) {
+      // Elemento focado no momento que apertamos uma tecla
+      const alvoDoEvento = infosDoEvento.target;
+      const teclaPressionada = infosDoEvento.key;
+      const isEnterPressionado = teclaPressionada === 'Enter';
+      const isEspacoPressionado = teclaPressionada === ' ';
+      
+      if(isEnterPressionado || isEspacoPressionado) {
+        console.log('Apertaram uma tecla e foi:', teclaPressionada);
+        alvoDoEvento.click();
+      }
+    })
+
   }
 })()

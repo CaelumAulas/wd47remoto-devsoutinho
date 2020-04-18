@@ -31,6 +31,9 @@
 ## Como saber os events importantes do JS?
 - https://developer.mozilla.org/en-US/docs/Web/Events
 
+## VsCode dicas
+- https://www.alura.com.br/artigos/visualstudio-code-instalacao-teclas-de-atalho-plugins-e-integracoes
+
 ============
 
 # Exercício 01
