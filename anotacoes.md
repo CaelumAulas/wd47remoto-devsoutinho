@@ -41,6 +41,13 @@
 ## Trabalhando com Eventos
 - Konami Code: https://www.youtube.com/watch?v=6KS4t97yMlI
 
+## Livro aberto de design patterns
+- https://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript
+    - Foca em aprender o que vc ganha usando e não em decorar nominhos
+
+## Como fazer tutorial de entrada para novos usuários:
+- https://introjs.com/
+
 ============
 
 # Exercício 01

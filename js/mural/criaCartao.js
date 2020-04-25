@@ -1,7 +1,9 @@
 // IIFE
+;(function() {
+
 let contador = 0;
 
-function criaHTMLDoCartao(conteudo) { // cria o template do cartão
+function criaHTMLDoCartao(conteudo, cor) { // cria o template do cartão
   // Copiem o HTML das Opções do cartão e coloqiuem nessa variável
   const opcoesDoCartao = `
     <div class="opcoesDoCartao">
@@ -32,7 +34,7 @@ function criaHTMLDoCartao(conteudo) { // cria o template do cartão
   `;
 
   const cartao = `
-  <article id="cartao_${contador}" class="cartao" tabindex="0">
+  <article id="cartao_${contador}" class="cartao" tabindex="0" style="background: ${cor};">
     ${opcoesDoCartao}
     <p class="cartao-conteudo" contenteditable tabindex="0">${conteudo}</p>
   </article>
@@ -80,9 +82,8 @@ function adicionaEventListenersNoCartao(cartao) {
   })
 }
 
-// https://github.com/CaelumAulas/wd47remoto-devsoutinho/blob/master/js/mural/criaCartao.js
-function criaCartao(conteudo) {
-  const htmlDoCartao = criaHTMLDoCartao(conteudo);
+function criaCartao(conteudo, cor = '#EBEF40') {
+  const htmlDoCartao = criaHTMLDoCartao(conteudo, cor);
 
   let tagTemplate = document.createElement('tpl')
   tagTemplate.innerHTML = htmlDoCartao;
@@ -90,13 +91,12 @@ function criaCartao(conteudo) {
 
   adicionaEventListenersNoCartao(cartao);
 
-  // Tragam o resto dos Event Listeners no arquivo cartao.js
-  // contador = contador + 1
   contador++;
   return cartao;
 }
 
+// Módulo
+// Revealing Module Pattern
+window.criaCartao = criaCartao;
 
-
-// - Ajustemm o criaCartao de vocês
-// - Apaga todos os <articles> dentro do mural em index.html
+})();
