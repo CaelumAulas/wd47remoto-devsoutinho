@@ -44,13 +44,26 @@ function criaHTMLDoCartao(conteudo) { // cria o template do cartão
   return cartao;
 }
 
+function adicionaEventListenersNoCartao(cartao) {
+  cartao.addEventListener('keydown', function(infosDoEvento) {
+    // Elemento focado no momento que apertamos uma tecla
+    const alvoDoEvento = infosDoEvento.target;
+    const teclaPressionada = infosDoEvento.key;
+    const isEnterPressionado = teclaPressionada === 'Enter';
+    const isEspacoPressionado = teclaPressionada === ' ';
+    
+    if(isEnterPressionado || isEspacoPressionado) {
+      console.log('Apertaram uma tecla e foi:', teclaPressionada);
+      alvoDoEvento.click();
+    }
+  })
 
-function criaCartao(conteudo) {
-  const htmlDoCartao = criaHTMLDoCartao(conteudo);
-
-  let tagTemplate = document.createElement('tpl')
-  tagTemplate.innerHTML = htmlDoCartao;
-  const cartao = tagTemplate.querySelector('.cartao');
+  cartao.addEventListener('focusin', function () {
+    cartao.classList.add('cartao--focado');
+  })
+  cartao.addEventListener('focusout', function () {
+    cartao.classList.remove('cartao--focado');
+  })
 
   cartao.addEventListener('click', function(infosDoEvento) {
     const alvoDoEvento = infosDoEvento.target;
@@ -68,6 +81,18 @@ function criaCartao(conteudo) {
       cartao.style.background = alvoDoEvento.value
     }
   })
+}
+
+// https://github.com/CaelumAulas/wd47remoto-devsoutinho/blob/master/js/mural/criaCartao.js
+function criaCartao(conteudo) {
+  const htmlDoCartao = criaHTMLDoCartao(conteudo);
+
+  let tagTemplate = document.createElement('tpl')
+  tagTemplate.innerHTML = htmlDoCartao;
+  const cartao = tagTemplate.querySelector('.cartao');
+
+  adicionaEventListenersNoCartao(cartao);
+
   // Tragam o resto dos Event Listeners no arquivo cartao.js
   return cartao;
 }

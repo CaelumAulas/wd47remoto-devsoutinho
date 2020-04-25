@@ -16,7 +16,9 @@
       const $mural = document.querySelector('.mural');
       
       const $cartao = criaCartao(conteudo)
-      $mural.insertAdjacentElement('afterbegin', $cartao);
+      $mural.insertAdjacentElement(
+        'afterbegin', $cartao
+      );
 
       $formNovoCartaoConteudo.value = '';
     } else {
