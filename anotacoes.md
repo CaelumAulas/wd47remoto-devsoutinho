@@ -48,6 +48,15 @@
 ## Como fazer tutorial de entrada para novos usuários:
 - https://introjs.com/
 
+## Promisse Chain
+- https://www.youtube.com/watch?v=kjhu1LEmRpY&list=PLMdYygf53DP4YTVeu0JxVnWq01uXrLwHi
+
+## Animate API
+- https://developer.mozilla.org/en-US/docs/Web/API/Element/animate
+
+## Barra de progresso de upload com JavaScript
+- https://www.youtube.com/watch?v=H-091qVG6LM
+
 ============
 
 # Exercício 01

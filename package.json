@@ -1,0 +1,17 @@
+{
+  "name": "ceep-caelum",
+  "version": "1.0.0",
+  "description": "Sem descrição",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5"
+  },
+  "scripts": {
+    "build": "babel src --out-dir dist --presets=@babel/preset-env --copy-files"
+  },
+  "author": "Mario Souto - Dev Soutinho",
+  "license": "MIT"
+}
