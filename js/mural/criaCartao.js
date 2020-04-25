@@ -1,5 +1,5 @@
 // Não vamos colocar a IIFE
-function criaHTMLDoCartao(conteudo) {
+function criaHTMLDoCartao(conteudo) { // cria o template do cartão
   // Como aumentar o ID do contador baseado nos cards da tela
   // Conceito do Delegate
   // Sincronização com Servidor externo
@@ -37,11 +37,37 @@ function criaHTMLDoCartao(conteudo) {
   const cartao = `
   <article id="cartao_${contador}" class="cartao" tabindex="0">
     ${opcoesDoCartao}
-    <p class="cartao-conteudo" contenteditable tabindex="0">
-       ${conteudo}
-    </p>
+    <p class="cartao-conteudo" contenteditable tabindex="0">${conteudo}</p>
   </article>
   `;
 
+  return cartao;
+}
+
+
+function criaCartao(conteudo) {
+  const htmlDoCartao = criaHTMLDoCartao(conteudo);
+
+  let tagTemplate = document.createElement('tpl')
+  tagTemplate.innerHTML = htmlDoCartao;
+  const cartao = tagTemplate.querySelector('.cartao');
+
+  cartao.addEventListener('click', function(infosDoEvento) {
+    const alvoDoEvento = infosDoEvento.target;
+    const isBtnRemove = alvoDoEvento.classList.contains('opcoesDoCartao-remove');
+    const isRadioTipo = alvoDoEvento.classList.contains('opcoesDoCartao-radioTipo');
+
+    if(isBtnRemove) {
+      cartao.classList.add('cartao--some');
+      cartao.addEventListener('transitionend', function() {
+        cartao.remove();
+      });
+    }
+
+    if(isRadioTipo) {
+      cartao.style.background = alvoDoEvento.value
+    }
+  })
+  // Tragam o resto dos Event Listeners no arquivo cartao.js
   return cartao;
 }

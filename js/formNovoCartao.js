@@ -14,8 +14,9 @@
     if(hasConteudo) {
       // [Declarativa] Template String - ES6
       const $mural = document.querySelector('.mural');
-      const htmlDoCartao = criaHTMLDoCartao(conteudo)
-      $mural.insertAdjacentHTML('afterbegin', htmlDoCartao);
+      
+      const $cartao = criaCartao(conteudo)
+      $mural.insertAdjacentElement('afterbegin', $cartao);
 
       $formNovoCartaoConteudo.value = '';
     } else {
