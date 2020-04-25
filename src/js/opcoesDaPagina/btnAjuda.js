@@ -27,10 +27,16 @@
     // AJAJ
     // Async JavaScript and JSON
 
+    // [Voltamos 16:00]
     fetch('https://ceep.herokuapp.com/cartoes/instrucoes')
       .then(function (respostaDoServidor) {
         console.log('Chegou o primeiro pedaço', respostaDoServidor)
-        return respostaDoServidor.json();
+
+        if(respostaDoServidor.ok) {
+          return respostaDoServidor.json();
+        }
+
+        throw new Error('Algum erro');
       }) // O retorno de um .then SEMPRE vai pro próximo que vier abaixo
       .then(function (respostaConvertida) {
         respostaConvertida.instrucoes.reverse().forEach(function (ajuda) {

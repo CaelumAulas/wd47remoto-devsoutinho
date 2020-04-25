@@ -57,6 +57,9 @@
 ## Barra de progresso de upload com JavaScript
 - https://www.youtube.com/watch?v=H-091qVG6LM
 
+## Clean Architecture: Uncle Bob
+- https://www.youtube.com/watch?v=Nsjsiz2A9mg
+
 ============
 
 # Exercício 01
