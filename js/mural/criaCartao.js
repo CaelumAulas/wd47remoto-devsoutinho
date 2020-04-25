@@ -1,10 +1,7 @@
-// Não vamos colocar a IIFE
-function criaHTMLDoCartao(conteudo) { // cria o template do cartão
-  // Como aumentar o ID do contador baseado nos cards da tela
-  // Conceito do Delegate
-  // Sincronização com Servidor externo
-  const contador = 0;
+// IIFE
+let contador = 0;
 
+function criaHTMLDoCartao(conteudo) { // cria o template do cartão
   // Copiem o HTML das Opções do cartão e coloqiuem nessa variável
   const opcoesDoCartao = `
     <div class="opcoesDoCartao">
@@ -94,5 +91,12 @@ function criaCartao(conteudo) {
   adicionaEventListenersNoCartao(cartao);
 
   // Tragam o resto dos Event Listeners no arquivo cartao.js
+  // contador = contador + 1
+  contador++;
   return cartao;
 }
+
+
+
+// - Ajustemm o criaCartao de vocês
+// - Apaga todos os <articles> dentro do mural em index.html
