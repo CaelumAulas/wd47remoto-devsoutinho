@@ -100,6 +100,9 @@ const teste = (bla, outroParam) => {
 ## Como funciona o import/export
 - https://www.alura.com.br/artigos/como-funciona-o-import-e-export-do-javascript
 
+## Cypress
+- https://docs.cypress.io/guides/getting-started/installing-cypress.html#System-requirements
+
 ## You Don't Know JS
 - https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md
 
