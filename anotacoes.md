@@ -80,6 +80,20 @@ const teste = (bla, outroParam) => {
 }
 ```
 
+## Ferramentas para lidar com buscas e gráficos
+- https://www.elastic.co/kibana
+- https://www.elastic.co/
+- https://www.algolia.com/
+- https://www.chartjs.org/
+
+## Ferramentas para visualização de dados
+- https://www.youtube.com/watch?v=Gojqw9BQ5qY
+- Pandas
+- https://looker.com/#exit-popup
+
+## Guia de Design Systems
+- https://github.com/alexpate/awesome-design-systems
+
 ## You Don't Know JS
 - https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md
 
