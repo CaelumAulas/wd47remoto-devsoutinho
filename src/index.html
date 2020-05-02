@@ -74,8 +74,10 @@
   <script src="./js/opcoesDaPagina/btnSync.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./js/opcoesDaPagina/busca.js"></script>
+  <script src="./js/opcoesDaPagina/carregaCartoes.js"></script>
   <!-- JSONP: JS com jQuery -->
-  <script>
+  <!-- <script>
     function seila(dadoQueVemDoServer) {
       dadoQueVemDoServer.cartoes.forEach(function(cartao) {
         criaCartaoNoMural(cartao.conteudo, cartao.cor)
@@ -89,7 +91,7 @@
       dataType: "jsonp",
       success: seila
     })
-  </script>
+  </script> -->
   <!-- JSONP: JS Puro -->
   <!-- 
     <script src='https://ceep.herokuapp.com/cartoes/carregar?usuario=mario.souto@caelum.com.br&callback=seila'></script>

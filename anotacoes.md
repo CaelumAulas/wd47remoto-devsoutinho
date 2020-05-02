@@ -60,6 +60,29 @@
 ## Clean Architecture: Uncle Bob
 - https://www.youtube.com/watch?v=Nsjsiz2A9mg
 
+
+## Como funciona o this na arrow function?
+function()
+O this, vai ser referente ao objeto no momento da execução.
+
+arrow function () => {}
+O this, vai ser referente ao objeto no momento de criação.
+
+```js
+const teste = () => {}
+
+const teste = bla => {
+    console.log(bla)
+}
+
+const teste = (bla, outroParam) => {
+    console.log(bla, outroParam)
+}
+```
+
+## You Don't Know JS
+- https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md
+
 ============
 
 # Exercício 01
