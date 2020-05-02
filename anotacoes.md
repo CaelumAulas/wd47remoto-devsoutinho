@@ -94,6 +94,12 @@ const teste = (bla, outroParam) => {
 ## Guia de Design Systems
 - https://github.com/alexpate/awesome-design-systems
 
+## Performance com Sérgio Lopes
+- https://www.youtube.com/watch?v=EMCBd3kw4zs
+
+## Como funciona o import/export
+- https://www.alura.com.br/artigos/como-funciona-o-import-e-export-do-javascript
+
 ## You Don't Know JS
 - https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md
 
