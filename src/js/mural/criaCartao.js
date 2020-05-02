@@ -95,8 +95,12 @@ function criaCartao(conteudo, cor = '#EBEF40') {
   return cartao;
 }
 
-// Módulo
-// Revealing Module Pattern
+function criaCartaoNoMural(conteudo, cor = '#EBEF40') {
+  const $cartao = criaCartao(conteudo, cor);
+  document.querySelector('.mural').insertAdjacentElement('afterbegin', $cartao);
+}
+// Módulo: Revealing Module Pattern
 window.criaCartao = criaCartao;
+window.criaCartaoNoMural = criaCartaoNoMural;
 
 })();
