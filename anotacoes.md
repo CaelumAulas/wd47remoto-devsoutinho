@@ -106,6 +106,9 @@ const teste = (bla, outroParam) => {
 ## You Don't Know JS
 - https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md
 
+## Para ver mais sobre SW
+- https://mastery.games/serviceworkies/
+
 ============
 
 # Exercício 01
